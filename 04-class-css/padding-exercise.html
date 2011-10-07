@@ -1,0 +1,30 @@
+<style>
+  #container {position:relative; background-color:lightgray; margin:20px; height:300px; }
+  /* positions the outter box so that things can be positioned within it */
+  #top-left {position:absolute; background-color:gray; top:0; left:0;
+    padding:15px; /* don't identify width or height, just use padding to center the text within the area */
+  } 
+  #bottom-right {position:absolute; background-color:gray; bottom:0; right:0;
+    padding:15px;		
+  }
+  .block-container {position:absolute; top:100px; /* positions the block container within the outter container */
+  }
+  .block {float:left; background-color:red; padding:20px; margin:10px;
+  } /* floating will keep them inline and margin will separate each block */
+
+
+</style>
+<div id='site'>
+Above Container
+<div id='container'>
+  <div id='top-left'>I'm in the top left!</div>
+  <div id='bottom-right'>I'm in the bottom right!</div>
+  <div class='block-container'>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+  </div>
+</div>
+Below Container
+</div>
